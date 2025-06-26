@@ -1,54 +1,48 @@
+
 body {
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
-  
-  
+  height: 100vh;
+  background-image: url('./public/pexels-christian-heitz-285904-842711.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      z-index: -1;
-      object-fit: cover;
-    }
-
 
 
 .weather-container {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
 }
 
-input {
+
+input[type="text"] {
   padding: 10px;
-  width: 200px;
+  width: 80%;
+  margin-bottom: 10px;
   border-radius: 5px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
+  border: none;
 }
+
 
 button {
-  padding: 10px 15px;
+  padding: 10px 20px;
   border: none;
-  background-color: #4fc3f7;
-  color: white;
   border-radius: 5px;
+  background-color: #00aaff;
+  color: white;
   cursor: pointer;
 }
 
-#weatherResult {
-  margin-top: 20px;
-  font-size: 1.1rem;
+button:hover {
+  background-color: #008ecc;
 }
