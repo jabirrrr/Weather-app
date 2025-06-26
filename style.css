@@ -3,10 +3,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(to right, #74ebd5, #acb6e5);
   margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  
+  
 }
+
+.bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+
 
 .weather-container {
   background: white;
